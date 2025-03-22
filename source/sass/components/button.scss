@@ -1,0 +1,91 @@
+.button {
+  display: inline-block;
+
+  font-family: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-decoration: none;
+
+  padding: 27px 56px;
+
+  border: 2px solid transparent;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+}
+
+.button--primary {
+  color: $color-white;
+
+  border-color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:focus-visible {
+    color: $color-egyptian-blue;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border-color: #000000;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    background-color: $color-white;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+
+    opacity: 0.5;
+  }
+}
+
+.button--secondary {
+  color: $color-sapphire;
+
+  border-color: $color-sapphire;
+
+  &:hover {
+    border-image: linear-gradient(61deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+
+    background-image: linear-gradient(61deg, #ed0233 0%, #003eb7 100%);
+    color: $color-white;
+  }
+
+  &:focus-visible {
+    color: $color-white;
+    background-image: linear-gradient(61deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+
+    border-color: #000000;
+
+    outline: none;
+  }
+
+  &:active {
+    border-image: linear-gradient(61deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+
+    background-image: linear-gradient(61deg, #ed0233 0%, #003eb7 100%);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+
+    opacity: 0.3;
+  }
+}
