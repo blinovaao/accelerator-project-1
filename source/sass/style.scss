@@ -8,14 +8,18 @@
 @import "global/variables";
 @import "global/fonts";
 @import "global/global";
+@import "global/visually-hidden";
 
 /* COMPONENTS */
 @import "components/button";
+@import "components/section-title";
 
 /* BLOCKS */
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/hero";
+@import "blocks/about";
+@import "blocks/video";
 @import "blocks/tabs";
 @import "blocks/info";
 @import "blocks/juri-slider";

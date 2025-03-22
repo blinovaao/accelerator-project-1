@@ -1,0 +1,43 @@
+.about__wrapper {
+  padding: 40px 0;
+}
+
+.about__text {
+  padding: 0 15px;
+}
+
+.about__title {
+  text-align: left;
+
+  margin: 0 0 12px;
+}
+
+.about__subtitle {
+  margin: 0 0 36px;
+
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.about__editor {
+  margin: 0 0 36px;
+}
+
+.about__editor p {
+  margin: 0;
+}
+
+.about__editor p:not(:last-child) {
+  margin: 0 0 10px;
+}
+
+.about__editor p:last-child {
+  display: none;
+}
+
+.about__image {
+  display: block;
+
+  margin: 0 0 36px;
+}
