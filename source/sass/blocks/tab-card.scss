@@ -1,0 +1,67 @@
+.tab-card {
+  padding: 51px 42px 50px;
+
+  background-color: $color-white;
+
+  text-align: center;
+}
+
+.tab-card__title {
+  margin: 0 0 18px;
+
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.tab-card__description {
+  display: block;
+
+  margin: 0 0 16px;
+}
+
+.tab-card__price-wrapper {
+  position: relative;
+
+  margin: 0 0 19px;
+}
+
+.tab-card__background-price {
+  display: inline-block;
+
+  color: rgba(232, 232, 232, 0.48);
+
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: 700;
+}
+
+.tab-card__price {
+  position: absolute;
+  display: inline-block;
+
+  left: 50%;
+  top: 68px;
+
+  transform: translateX(-50%);
+
+  padding: 0 34px 0 0;
+  margin: -20px 0 0;
+
+  color: $color-egyptian-blue;
+
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+
+  background-image: url("../../img/sprite/ruble.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 33px;
+  background-position: right top calc(50% + 1px);
+
+  z-index: 5;
+}
+
+.tab-card__button {
+  padding: 26px 48px 25px;
+}

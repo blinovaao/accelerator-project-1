@@ -1,11 +1,98 @@
 .tabs__list {
   @include list-style;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 0 3px;
+  margin: 0 0 30px;
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.tabs__button {
+  border: none;
+
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  position: relative;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    border-bottom: 2px solid transparent;
+
+    width: 100%;
+
+    left: 0;
+    bottom: -8px;
+  }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+
+    &::after {
+      border-bottom-color: #787878;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    color: $color-sapphire;
+
+    &::after {
+      border-bottom-color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    color: $color-sapphire;
+
+    opacity: 0.3;
+
+    pointer-events: none;
+
+    &::after {
+      border-bottom-color: $color-sapphire;
+    }
+  }
+}
+
+.tabs__button--active {
+  color: $color-sapphire;
+
+  &::after {
+    border-bottom-color: $color-torch-red;
+  }
 }
 
 .tabs__content {
   @include list-style;
 }
 
+.tabs__content-item {
+  display: none;
+  flex-direction: column;
+
+  &--active {
+    display: flex;
+  }
+}
+
 .tabs__cards {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }

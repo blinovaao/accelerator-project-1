@@ -31,6 +31,35 @@
   font-weight: 700;
 
   color: inherit;
+
+  &:hover {
+    color: rgba(28, 52, 119, 0.5);
+  }
+
+  &:focus-visible {
+    color: $color-resolution-blue;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-sapphire;
+
+    text-decoration: 1px solid $color-sapphire underline;
+    text-underline-offset: 6px;
+  }
+
+  &:disabled {
+    color: #f8f9fc;
+
+    pointer-events: none;
+  }
+}
+
+.hero__link.disabled {
+  color: #f8f9fc;
+
+  pointer-events: none;
 }
 
 .hero__content {
