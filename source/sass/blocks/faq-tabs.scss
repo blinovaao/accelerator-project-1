@@ -1,11 +1,93 @@
 .faq-tabs__list {
   @include list-style;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+
+  margin: 0 0 36px;
+}
+
+.faq-tabs__button {
+  padding: 14px 23px;
+
+  width: 100%;
+
+  background-color: transparent;
+
+  border: 1px solid rgba(16, 38, 84, 0.2);
+
+  font-size: 16px;
+  line-height: 16px;
+
+  cursor: pointer;
+
+  &--active {
+    background-image: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    border-image: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+
+    color: $color-white;
+  }
+
+  &:hover {
+    background-color: transparent;
+    background-image: unset;
+    color: $color-sapphire;
+
+    border-color: $color-sapphire;
+    border-image: unset;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    background-color: $color-white;
+    background-image: unset;
+    color: $color-sapphire;
+
+    border-color: $color-sapphire;
+    border-image: unset;
+  }
+
+  &:active {
+    background-image: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    border-image: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+
+    color: $color-white;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+
+    color: #c8c9cc;
+  }
 }
 
 .faq-tabs__content {
   @include list-style;
+
+  border-top: 1px solid #74819c;
+}
+
+.faq-tabs__content-item {
+  display: none;
+}
+
+.faq-tabs__content-item--active {
+  display: block;
 }
 
 .faq-tabs__cards {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-tabs__card {
+  margin: 0 0 -1px;
 }

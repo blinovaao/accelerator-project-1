@@ -1,0 +1,31 @@
+.offer {
+  border: 7px solid transparent;
+  border-image: linear-gradient(158deg, $color-crimson, #00359f);
+  border-image-slice: 1;
+
+  text-align: center;
+
+  padding: 21px 20px 22px;
+
+  color: $color-resolution-blue;
+}
+
+.offer h3 {
+  margin: 0 0 19px;
+
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.offer p {
+  margin: 0 0 16px;
+}
+
+.offer__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-underline-offset: 7px;
+
+  color: inherit;
+}

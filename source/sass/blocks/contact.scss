@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__title {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contact__info {
+  margin: 0;
+
+  font-style: normal;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+
+  color: $color-sapphire;
+}

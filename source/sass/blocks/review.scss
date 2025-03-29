@@ -1,0 +1,28 @@
+.review {
+  padding: 30px 25px;
+
+  text-align: center;
+
+  color: $color-white;
+  background-color: $color-resolution-blue;
+
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
+
+.review img {
+  display: inline-block;
+
+  margin: 0 0 4px;
+}
+
+.review__inner p {
+  margin: 0 0 16px;
+
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.review__inner blockquote {
+  margin: 0;
+}

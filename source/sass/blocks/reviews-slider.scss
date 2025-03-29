@@ -1,3 +1,15 @@
 .reviews-slider__list {
   @include list-style;
 }
+
+.reviews-slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.reviews-slider__buttons {
+  display: none;
+}

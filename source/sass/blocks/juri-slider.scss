@@ -1,7 +1,22 @@
+.juri-slider {
+  max-width: 260px;
+
+  overflow-x: hidden;
+}
+
 .juri-slider__list {
   @include list-style;
+
+  display: flex;
+  width: max-content;
+
+  gap: 20px;
 }
 
 .juri-item__info {
   @include list-style;
+}
+
+.juri-slider__buttons {
+  display: none;
 }

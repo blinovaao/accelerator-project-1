@@ -1,3 +1,20 @@
 .footer-nav__list {
   @include list-style;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 37px;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+
+  color: $color-white;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  padding: 0 0 5px;
+
+  border-bottom: 1px solid transparent;
 }

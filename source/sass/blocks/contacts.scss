@@ -1,3 +1,17 @@
+.contacts__wrapper {
+  padding: 37px 15px 38px;
+}
+
+.contacts__title {
+  text-align: left;
+
+  margin: 0 0 37px;
+}
+
 .contacts__list {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }

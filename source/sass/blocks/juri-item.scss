@@ -1,0 +1,29 @@
+.juri-item {
+  position: relative;
+}
+
+.juri-item__name {
+  position: absolute;
+
+  left: 50%;
+  bottom: 30px;
+
+  transform: translateX(-50%);
+
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+
+  color: $color-white;
+
+  margin: 0;
+
+  width: 80%;
+}
+
+.juri-item__info {
+  position: absolute;
+
+  display: none;
+}

@@ -1,0 +1,41 @@
+.games__wrapper {
+  padding: 24px 15px 25px;
+}
+
+.games__text {
+  background-color: $color-torch-red;
+  color: $color-white;
+
+  padding: 40px;
+}
+
+.games__text-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 37px;
+
+  margin: 0 0 16px;
+}
+
+.games__title {
+  margin: 0;
+
+  font-family: $secondary-font;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.games__description {
+  margin: 0 0 17px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.games__button {
+  padding: 22px 20px;
+
+  width: 100%;
+}

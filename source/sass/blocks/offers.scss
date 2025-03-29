@@ -1,3 +1,27 @@
+.offers__wrapper {
+  padding: 41px 0;
+}
+
+.offers__title {
+  margin: 0 0 40px;
+}
+
 .offers__list {
   @include list-style;
+
+  max-width: calc(100% - 30px);
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.offers__image {
+  display: block;
+}
+
+.offers__inner {
+  margin: 0 0 41px;
 }
